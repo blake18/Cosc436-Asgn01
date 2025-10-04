@@ -3,7 +3,7 @@
  * <p>
  * (Of course, *real* unit tests would be much better, but this is fine for such a simple program.)
  */
-public class MAIN {
+public class main {
     /**
      * !!!! DEMONSTRATION AND TEST OF THE ORDER PROCESSOR CLASS. !!!!
      * <p>

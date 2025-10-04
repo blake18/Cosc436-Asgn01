@@ -1,0 +1,19 @@
+Hi it's me Oscar Ma, sorry for this being so late I have really bad time management skills
+lets move onto the info stuff
+
+Q: Why did you choose the approach you did?
+A: "Thats a little bit vague but I chose the amount of classes and what to put in each class basically just 
+    from the insturctions part where it identifies the 'problems', each repsonsiblity made sense to me and
+    I thought it felt perfect to have each one be its own class"  
+
+
+Q: What alternatives did you consider?
+A: "I originally before i fully read the instructions consider having the savingOrderToDatabase function inside 
+    the OrderManager class as well, just cause that was just what I orignally thought naturally made sense, I'm glad 
+    I didn't though, I think have it in its own class follow the Single Responsibility Principle better. "  
+
+
+Q: What was the most difficult part of the assignment??
+A: "The hardest part for me was just reviewing the OrderProcessor class, it was infact really dense and not well organized
+    or easily readable. Everything was also so densly commented it that it actually kinda made reviewing it harder, once 
+    I understood everything the assignment became very comfortable " 

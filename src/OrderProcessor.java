@@ -18,6 +18,8 @@ record Product(String productName, double retailCost, double wholesaleCost) {
  * persist, and present them. This class contains simple business logic for
  * handling an in-memory order list and demonstrates basic persistence and output.
  */
+
+ // Oscar here, I didn't change anything above this
 class OrderProcessor {
 
     //Helper class references and declaration

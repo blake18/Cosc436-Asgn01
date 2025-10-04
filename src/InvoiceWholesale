@@ -1,1 +1,36 @@
 import java.util.*;
+
+class invoiceWholesale{
+    private final static String WHOLESALE_INVOICE_HEADER = "====================== Invoice =====================";
+    private final static String WHOLESALE_INVOICE_FOOTER = "====================================================";
+
+
+    public void printWholesalerInvoice() {
+        // Print the invoice header line.
+        System.out.println(WHOLESALE_INVOICE_HEADER);
+
+        // Initialize a counter to number each product line item.
+        int count = 1;
+        double totalCost = 0.0;
+
+        // Loop through each Product to print its details.
+        for (Product p : orders) {
+            // Calculate the total cost for the order.
+            totalCost += p.wholesaleCost();
+
+            // Print the numbered line with product name and both cost values.
+            System.out.printf("%d. %-10s | Wholesale: $%.2f | MSRP: $%.2f%n", count++, p.productName(), p.wholesaleCost(), p.retailCost());
+        }
+
+        System.out.println("----------------------------------------------------");
+        if (count > 10 || totalCost > 1000.0) {
+            System.out.println("Discount applied!");
+            totalCost *= 0.9; // Apply a 10% discount
+        }
+
+        System.out.printf("Total: $%.2f%n", totalCost);
+
+        // Print the invoice footer line.
+        System.out.println(WHOLESALE_INVOICE_FOOTER);
+    }
+}

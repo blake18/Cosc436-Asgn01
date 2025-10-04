@@ -1,11 +1,10 @@
-import java.util.*;
 
-class invoiceWholesale{
+public class InvoiceWholesale{
     private final static String WHOLESALE_INVOICE_HEADER = "====================== Invoice =====================";
     private final static String WHOLESALE_INVOICE_FOOTER = "====================================================";
 
 
-    public void printWholesalerInvoice() {
+    public void printWholesaleInvoice(OrderManage Manager) {
         // Print the invoice header line.
         System.out.println(WHOLESALE_INVOICE_HEADER);
 
@@ -14,7 +13,7 @@ class invoiceWholesale{
         double totalCost = 0.0;
 
         // Loop through each Product to print its details.
-        for (Product p : orders) {
+        for (Product p : Manager.getOrders()) {
             // Calculate the total cost for the order.
             totalCost += p.wholesaleCost();
 

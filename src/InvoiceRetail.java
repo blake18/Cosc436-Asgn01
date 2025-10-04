@@ -1,11 +1,10 @@
-import java.util.*;
 
-class invoiceRetail{
+public class InvoiceRetail{
     private final static String RETAIL_INVOICE_HEADER = "================== Retail Invoice ==================";
     private final static String RETAIL_INVOICE_FOOTER = "====================================================";
     
 
-    public void printRetailInvoice() {
+    public void printRetailInvoice(OrderManage Manager) {
         // Print the invoice header line.
         System.out.println(RETAIL_INVOICE_HEADER);
 
@@ -14,7 +13,7 @@ class invoiceRetail{
         double totalCost = 0.0;
 
         // Loop through each Product to print its details.
-        for (Product p : orders) {
+        for (Product p : Manager.getOrders()) {
             // Calculate the total cost for the order.
             totalCost += p.retailCost();
 

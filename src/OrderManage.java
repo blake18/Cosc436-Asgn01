@@ -1,6 +1,6 @@
 import java.util.*;
 
-class OrderManage{
+public class OrderManage{
     private final List<Product> orders = new ArrayList<>();
 
     public void addOrder(Product product) {

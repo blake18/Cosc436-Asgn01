@@ -27,7 +27,7 @@ public class main {
 
         // Print wholesaler invoice
         System.out.println("Initial Wholesaler Invoice:");
-        processor.printWholesalerInvoice();
+        processor.printWholesaleInvoice();
         System.out.println();
 
         // Print current invoice
